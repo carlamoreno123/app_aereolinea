@@ -10,8 +10,8 @@ class Pasajero {
   String? password;
   String? direccion;
   String? direccioncorreo;
-  int? dni;
-  int? telefono;
+  String? dni;
+  String? telefono;
 
   //Constructor
   Pasajero();
@@ -46,7 +46,7 @@ class Pasajero {
     }
   }
 
-  insertarUsuario() async {
+  insertarpasajero() async {
     var conn = await Database().conexion();
     try {
       await conn.query(
